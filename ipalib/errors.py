@@ -666,6 +666,14 @@ class ACIError(AuthorizationError):
     format = _('Insufficient access: %(info)s')
 
 
+class TenantIsolationError(ACIError):
+    """
+    **2101** Raised when an operation would cross a tenant boundary.
+    """
+
+    errno = 2101
+    format = _('Tenant "%(tenant)s" access denied: %(reason)s')
+
 
 ##############################################################################
 # 3000 - 3999: Invocation errors

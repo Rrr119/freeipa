@@ -6140,6 +6140,30 @@ option: Str('version?')
 output: Entry('result')
 output: Output('summary', type=[<type 'str'>, <type 'NoneType'>])
 output: PrimaryKey('value')
+command: tenant_add/1
+args: 1,7,2
+arg: Str('cn', cli_name='name')
+option: Str('description?', cli_name='desc')
+option: Flag('disable_allow_all', autofill=True, cli_name='disable_allow_all', default=False)
+option: Str('group?', cli_name='group')
+option: Str('hbacsvc*', cli_name='service')
+option: Str('hbacsvcgroup*', cli_name='servicegroup')
+option: Str('hostgroup?', cli_name='hostgroup')
+option: Str('version?')
+output: Output('result', type=[<type 'dict'>])
+output: Output('summary', type=[<type 'str'>, <type 'NoneType'>])
+command: tenant_del/1
+args: 1,2,2
+arg: Str('cn', cli_name='name')
+option: Flag('purge', autofill=True, cli_name='purge', default=False)
+option: Str('version?')
+output: Output('result', type=[<type 'dict'>])
+output: Output('summary', type=[<type 'str'>, <type 'NoneType'>])
+command: tenant_show/1
+args: 1,1,1
+arg: Str('cn', cli_name='name')
+option: Str('version?')
+output: Output('result', type=[<type 'dict'>])
 command: topic_find/1
 args: 1,4,4
 arg: Str('criteria?')
@@ -7671,6 +7695,9 @@ default: sysaccount_find/1
 default: sysaccount_mod/1
 default: sysaccount_policy/1
 default: sysaccount_show/1
+default: tenant_add/1
+default: tenant_del/1
+default: tenant_show/1
 default: topic/1
 default: topic_find/1
 default: topic_show/1

@@ -442,6 +442,9 @@ IPA API Commands
    sysaccount_mod.md
    sysaccount_policy.md
    sysaccount_show.md
+   tenant_add.md
+   tenant_del.md
+   tenant_show.md
    topic_find.md
    topic_show.md
    topologysegment_add.md

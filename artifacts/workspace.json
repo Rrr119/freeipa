@@ -1,0 +1,17 @@
+{
+  "root": "/home/dev/feedback/uid31486",
+  "B": "/home/dev/feedback/uid31486",
+  "sha": "c0d3fc05c3237c00284cadc93c46d075a84b9f39",
+  "wslDistro": "Ubuntu-26.04",
+  "source": {
+    "owner": "freeipa",
+    "repo": "freeipa",
+    "sha": "c0d3fc05c3237c00284cadc93c46d075a84b9f39"
+  },
+  "fork": {
+    "owner": "Rrr119",
+    "repo": "freeipa",
+    "cloneUrl": "https://github.com/Rrr119/freeipa.git"
+  },
+  "at": "2026-11-21T08:40:09.978Z"
+}
